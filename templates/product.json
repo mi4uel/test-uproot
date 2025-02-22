@@ -77,6 +77,15 @@
         "padding_bottom": 12
       }
     },
+    "compare_table_image_P6w3gx": {
+      "type": "compare-table-image",
+      "settings": {
+        "product_1": "uproot-washing-machine-cleaner-pro",
+        "title_1": "<p>Uproot Washing Machine<br/><strong>Cleaner Pro</strong></p>",
+        "product_2": "uproot-washing-machine-cleaner-ultra",
+        "title_2": "<p>Uproot Washing Machine<br/><strong>Cleaner </strong><em><strong>Pro</strong></em></p>"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -98,6 +107,7 @@
   },
   "order": [
     "main",
+    "compare_table_image_P6w3gx",
     "related-products"
   ]
 }
