@@ -23,12 +23,12 @@
           "type": "title",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "variant_picker": {
@@ -55,8 +55,8 @@
       "block_order": [
         "vendor",
         "title",
-        "description",
         "price",
+        "description",
         "variant_picker",
         "buy_buttons",
         "share"
