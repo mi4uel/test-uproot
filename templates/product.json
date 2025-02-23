@@ -85,7 +85,7 @@
           "settings": {
             "title_1": "<h3>For Small <br/>Pet Households</h3>",
             "text_1": "<p>Perfect for homes <br/>with a single small/medium pet</p>",
-            "image": "shopify://shop_images/wash.jpg",
+            "image": "shopify://shop_images/wmachin.jpg",
             "title_2": "<h3>For Multiple or Large <br/>Pet Households</h3>",
             "text_2": "<p>Perfect for homes <br/>with multiple pets or large pets</p>"
           }
@@ -95,7 +95,7 @@
           "settings": {
             "title_1": "<h3>Strong Formula</h3>",
             "text_1": "<p>Deep cleans residue, <br/>odors, and buildup</p>",
-            "image": "shopify://shop_images/muscle.jpg",
+            "image": "shopify://shop_images/musclee.jpg",
             "title_2": "<h3>40% More Powerful</h3>",
             "text_2": "<p>Tackles tough buildup <br/>with enhanced strength</p>"
           }
@@ -105,7 +105,7 @@
           "settings": {
             "title_1": "<h3>Compact Power - 11g</h3>",
             "text_1": "<p>Strong & Efficient Clean</p>",
-            "image": "shopify://shop_images/bag.jpg",
+            "image": "shopify://shop_images/power.jpg",
             "title_2": "<h3>Maximum Strength - 15g</h3>",
             "text_2": "<p>Deep Thorough Clean</p>"
           }
@@ -115,7 +115,7 @@
           "settings": {
             "title_1": "<h3>Effective Odor Removal</h3>",
             "text_1": "<p>Ideal for routine washer care</p>",
-            "image": "shopify://shop_images/atom.jpg",
+            "image": "shopify://shop_images/atoom.jpg",
             "title_2": "<h3>Cyclodextrin-Powered</h3>",
             "text_2": "<p>Advanced odor and residue removal</p>"
           }
