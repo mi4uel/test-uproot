@@ -1,0 +1,32 @@
+{% liquid
+    assign product = section.settings.product_1
+    assign image = section.settings.image_1
+    assign title = section.settings.title_1
+    if card_product != 1
+        assign product = section.settings.product_2
+        assign image = section.settings.image_2
+        assign title = section.settings.title_2
+    endif
+
+    if product != blank or image != blank
+  
+    if product != blank
+      assign title = product.title
+      assign image = product.featured_image
+    endif
+  
+endif
+%}
+<div>
+  <div>{{ title }}</div>
+  <picture>
+    <source media="(min-width: 750px)" srcset="{{ image |  image_url: width: 700  }}">
+    <source media="(max-width: 749px)" srcset="{{ image |  image_url: width: 300  }}">
+    <img
+      src="{{ image |  image_url: width: 700  }}"
+      alt=""
+      width="700"
+      height="400"
+      loading="lazy">
+  </picture>
+</div>

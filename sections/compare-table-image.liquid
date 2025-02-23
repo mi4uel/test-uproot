@@ -1,3 +1,5 @@
+{{ 'section-compare-table-image.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,8 +14,19 @@
     }
   {%- endstyle -%}
 <div class="compare-table-image color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}">
-    <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"></div>    
-
+    <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="compare-wapper">
+            {% render 'compare-image' section:section, card_product: 1 %}
+            {% render 'compare-image' section:section, card_product: 2 %}
+            {% if section.blocks.size > 0 %}
+                <div class="compare-items-wrapper">
+                    {% for block in section.blocks %}
+                        {% render 'compare-item', block: block %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
 
 {% schema %}

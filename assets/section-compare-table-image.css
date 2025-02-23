@@ -1,0 +1,29 @@
+.compare-items-wrapper{
+    
+}
+.compare-items-wrapper .item-text > *{
+    text-align: center;
+    margin: 0;
+
+}
+.compare-items-wrapper picture,
+.compare-items-wrapper picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.compare-item-wrapper{
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr minmax(auto, 100px) 1fr;
+    border-bottom: 3px solid #9adbe8;
+    padding: 1.5rem ;
+}
+.compare-items-wrapper .item-title > *{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+}
+.compare-items-wrapper .text-2 .item-title >*{
+    color: #9adbe8;
+}
