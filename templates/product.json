@@ -94,10 +94,10 @@
           "type": "text",
           "settings": {
             "title_1": "<h3>Strong Formula</h3>",
-            "text_1": "<p>Deep cleans residue, odors, and buildup</p>",
+            "text_1": "<p>Deep cleans residue, <br/>odors, and buildup</p>",
             "image": "shopify://shop_images/muscle.jpg",
             "title_2": "<h3>40% More Powerful</h3>",
-            "text_2": "<p>Tackles tough buildup with enhanced strength</p>"
+            "text_2": "<p>Tackles tough buildup <br/>with enhanced strength</p>"
           }
         },
         "text_iU3gMF": {
