@@ -1,29 +1,99 @@
+.compare-wapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.compare-single-image .compare-single-image__title{
+    text-align: center;
+    margin-bottom: .6rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.compare-single-image .compare-single-image__title > *{
+    margin: 0;
+    line-height: 3.6rem;
+    color: rgb(var(--color-foreground));
+}
+.compare-single-image .compare-single-image__title em{
+    color: #08c9c7;
+}
 .compare-items-wrapper{
-    
+    grid-column: 1 / 3;
+    margin-top: 1rem;
 }
 .compare-items-wrapper .item-text > *{
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 34rem;
 
 }
+.compare-wapper picture,
+.compare-wapper picture img,
 .compare-items-wrapper picture,
 .compare-items-wrapper picture img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+.compare-single-image img,
+.compare-single-image picture{
+    max-height: 400px;
 }
 .compare-item-wrapper{
     display: grid;
     gap: 4px;
-    grid-template-columns: 1fr minmax(auto, 100px) 1fr;
-    border-bottom: 3px solid #9adbe8;
+    grid-template-columns: 1fr minmax(auto, 120px) 1fr;
+    border-bottom: 3px solid #08c9c7;
     padding: 1.5rem ;
+}
+.compare-item-wrapper:last-child{
+    border-bottom: 0;
 }
 .compare-items-wrapper .item-title > *{
     font-weight: 600;
-    font-size: 26px;
+    font-size: 2.5rem;
     margin: 0;
+    
 }
 .compare-items-wrapper .text-2 .item-title >*{
-    color: #9adbe8;
+    color: #08c9c7;
+}
+@media screen and (max-width:749px) {
+    .compare-wapper{
+        gap: .4rem;
+    }
+    .compare-single-image img{
+        scale: 1.2;
+    }
+    .compare-single-image .compare-single-image__title{
+        font-size: 1.3rem;
+    }
+    .compare-single-image .compare-single-image__title>*{
+        line-height: 1.8rem;
+    }
+    .compare-item-wrapper{
+        grid-template-columns: 1fr  1fr;
+        padding: 1rem 0rem;
+        gap: .8rem;
+        border-bottom-width: 2px;
+    }
+    .compare-item-wrapper picture{
+        display: none;
+    }
+    .compare-items-wrapper .item-text>*{
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        margin-bottom: .4rem;
+    }
+    .compare-items-wrapper .item-title>*{
+        font-size: 1.2rem;
+    }
+    .compare-items-wrapper  .item-text{
+        align-content: center;
+        display: grid;
+    }
 }
