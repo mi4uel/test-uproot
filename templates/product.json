@@ -85,6 +85,7 @@
           "settings": {
             "title_1": "<h3>For Small <br/>Pet Households</h3>",
             "text_1": "<p>Perfect for homes with a single small/medium pet</p>",
+            "image": "shopify://shop_images/wash.jpg",
             "title_2": "<h3>For Multiple or Large <br/>Pet Households</h3>",
             "text_2": "<p>Perfect for homes with multiple pets or large pets</p>"
           }
@@ -94,6 +95,7 @@
           "settings": {
             "title_1": "<h3>Strong Formula</h3>",
             "text_1": "<p>Deep cleans residue, odors, and buildup</p>",
+            "image": "shopify://shop_images/muscle.jpg",
             "title_2": "<h3>40% More Powerful</h3>",
             "text_2": "<p>Tackles tough buildup with enhanced strength</p>"
           }
@@ -103,6 +105,7 @@
           "settings": {
             "title_1": "<h3>Compact Power - 11g</h3>",
             "text_1": "<p>Strong & Efficient Clean</p>",
+            "image": "shopify://shop_images/bag.jpg",
             "title_2": "<h3>Maximum Strength - 15g</h3>",
             "text_2": "<p>Deep Thorough Clean</p>"
           }
@@ -112,6 +115,7 @@
           "settings": {
             "title_1": "<h3>Effective Odor Removal</h3>",
             "text_1": "<p>Ideal for routine washer care</p>",
+            "image": "shopify://shop_images/atom.jpg",
             "title_2": "<h3>Cyclodextrin-Powered</h3>",
             "text_2": "<p>Advanced odor and residue removal</p>"
           }
@@ -130,8 +134,8 @@
         "title_1": "<p>Uproot Washing Machine<br/><strong>Cleaner Pro</strong></p>",
         "product_2": "uproot-washing-machine-cleaner-ultra",
         "title_2": "<p>Uproot Washing Machine<br/><strong>Cleaner </strong><em><strong>Pro</strong></em></p>",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "related-products": {
