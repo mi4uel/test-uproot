@@ -131,8 +131,10 @@
         "color_scheme": "scheme-2",
         "background_style": "primary",
         "product_1": "uproot-washing-machine-cleaner-pro",
+        "image_1": "shopify://shop_images/New_pro.jpg",
         "title_1": "<p>Washing Machine<br/><strong>Cleaner Pro</strong></p>",
         "product_2": "uproot-washing-machine-cleaner-ultra",
+        "image_2": "shopify://shop_images/ultra.jpg",
         "title_2": "<p>Washing Machine<br/><strong>Cleaner </strong><em><strong>Pro</strong></em></p>",
         "padding_top": 100,
         "padding_bottom": 100
