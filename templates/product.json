@@ -84,10 +84,10 @@
           "type": "text",
           "settings": {
             "title_1": "<h3>For Small <br/>Pet Households</h3>",
-            "text_1": "<p>Perfect for homes with a single small/medium pet</p>",
+            "text_1": "<p>Perfect for homes <br/>with a single small/medium pet</p>",
             "image": "shopify://shop_images/wash.jpg",
             "title_2": "<h3>For Multiple or Large <br/>Pet Households</h3>",
-            "text_2": "<p>Perfect for homes with multiple pets or large pets</p>"
+            "text_2": "<p>Perfect for homes <br/>with multiple pets or large pets</p>"
           }
         },
         "text_4WXV9F": {
