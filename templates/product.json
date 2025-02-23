@@ -79,6 +79,50 @@
     },
     "compare_table_image_P6w3gx": {
       "type": "compare-table-image",
+      "blocks": {
+        "text_CXDYp3": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>For Small <br/>Pet Households</h3>",
+            "text_1": "<p>Perfect for homes with a single small/medium pet</p>",
+            "title_2": "<h3>For Multiple or Large <br/>Pet Households</h3>",
+            "text_2": "<p>Perfect for homes with multiple pets or large pets</p>"
+          }
+        },
+        "text_4WXV9F": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Strong Formula</h3>",
+            "text_1": "<p>Deep cleans residue, odors, and buildup</p>",
+            "title_2": "<h3>40% More Powerful</h3>",
+            "text_2": "<p>Tackles tough buildup with enhanced strength</p>"
+          }
+        },
+        "text_iU3gMF": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Compact Power - 11g</h3>",
+            "text_1": "<p>Strong & Efficient Clean</p>",
+            "title_2": "<h3>Maximum Strength - 15g</h3>",
+            "text_2": "<p>Deep Thorough Clean</p>"
+          }
+        },
+        "text_BkdxYE": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Effective Odor Removal</h3>",
+            "text_1": "<p>Ideal for routine washer care</p>",
+            "title_2": "<h3>Cyclodextrin-Powered</h3>",
+            "text_2": "<p>Advanced odor and residue removal</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CXDYp3",
+        "text_4WXV9F",
+        "text_iU3gMF",
+        "text_BkdxYE"
+      ],
       "settings": {
         "product_1": "uproot-washing-machine-cleaner-pro",
         "title_1": "<p>Uproot Washing Machine<br/><strong>Cleaner Pro</strong></p>",
