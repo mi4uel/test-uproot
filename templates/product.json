@@ -98,7 +98,10 @@
     "embed_video_EATTbk": {
       "type": "embed-video",
       "settings": {
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/509d7e4732554dc09c10cc2c95014c2b.mov"
+        "color_scheme": "scheme-2",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/509d7e4732554dc09c10cc2c95014c2b.mov",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
