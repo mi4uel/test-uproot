@@ -1,54 +1,68 @@
-<section class="video-section">
-  <div class="video-container">
+{{ 'section-embed-video.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+<div class="embed-video color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {% if section.settings.video_url != blank %}
-      <video autoplay muted loop playsinline>
-        <source src="{{ section.settings.video_url }}" type="video/mp4">
-        Your browser does not support videos.
-      </video>
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="{{ section.settings.video_url }}" type="video/mp4">
+              Your browser does not support videos.
+            </video>
+        </div>
     {% else %}
       <p>Please select a video in the customizer.</p>
     {% endif %}
   </div>
-</section>
+</div>
 
-<style>
-  .video-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-
-  .video-container {
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  @media (max-width: 749px) {
-    .video-container {
-      max-width: 100%;
-    }
-  }
-</style>
 
 {% schema %}
 {
   "name": "Video Embed",
   "settings": [
     {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
       "type": "url",
       "id": "video_url",
       "label": "Video URL",
       "info": "Upload a video to Shopify and paste the URL here"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     }
   ],
   "presets": [
