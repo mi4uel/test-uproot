@@ -92,8 +92,44 @@
       {{ input_dataset }}
     >
     <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
+      {% liquid
+        assign free_shipping_threshold = settings.free_shipping_threshold | times: 100
+        assign variant_price = product.selected_or_first_available_variant.price
+        assign variant_compare_price = product.selected_or_first_available_variant.compare_at_price
+        assign variant_tab_title = product.selected_or_first_available_variant.title
+        assign variant_save_discount = 0
+        assign variant_save_discount_percent = 0
+        for variant in product.variants
+          if variant.title contains value
+            assign variant_price = variant.price
+            assign variant_compare_price = variant.compare_at_price
+            assign variant_save_discount = variant_price | times: 100.0 | divided_by: variant_compare_price
+            assign variant_save_discount_percent = 100 | minus: variant_save_discount
+            assign variant_tab_title =  variant.title
+            if variant.metafields.custom.title != blank
+              assign variant_tab_title =  variant.metafields.custom.title
+            endif
+          endif
+        endfor
+        
+        assign single_price = variant_price | divided_by: value
+       
+
+      %}
+      <div class="option-wrapper">
+        <span class="option_size-text one-option option-left">{{variant_tab_title}} 
+          {{ label_unavailable }}
+          <div class="price-per-unit">{{single_price | money}} Each + Free Gift</div>
+        </span>
+        <span class="option_size-price one-option option-right">
+          <div class="savings-percent-wrapper"><span class="savings-percent">Save {{variant_save_discount_percent  | round}}% {% if variant_price >= free_shipping_threshold %}
+          + Free Shipping  
+          {% endif %}</span></div>
+          <s class="price-compare">{{ variant_compare_price | money}}</s>
+          {{ variant_price  | money}}
+        </span>
+      </div>
+       
     </label>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
