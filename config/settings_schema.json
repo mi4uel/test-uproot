@@ -1417,6 +1417,12 @@
     "name": "t:settings_schema.cart.name",
     "settings": [
       {
+        "id": "free_shipping_threshold",
+        "type": "number",
+        "label": "Free Shipping Threshold",
+        "default": 45
+      },
+      {
         "type": "select",
         "id": "cart_type",
         "options": [
