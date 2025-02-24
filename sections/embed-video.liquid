@@ -1,0 +1,60 @@
+<section class="video-section">
+  <div class="video-container">
+    {% if section.settings.video_url != blank %}
+      <video autoplay muted loop playsinline>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+        Your browser does not support videos.
+      </video>
+    {% else %}
+      <p>Please select a video in the customizer.</p>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .video-container {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 749px) {
+    .video-container {
+      max-width: 100%;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Video Embed",
+  "settings": [
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL",
+      "info": "Upload a video to Shopify and paste the URL here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Embed"
+    }
+  ]
+}
+{% endschema %}
