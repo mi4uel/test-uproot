@@ -77,6 +77,69 @@
         "padding_bottom": 12
       }
     },
+    "compare_table_image_P6w3gx": {
+      "type": "compare-table-image",
+      "blocks": {
+        "text_CXDYp3": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>For Small <br/>Pet Households</h3>",
+            "text_1": "<p>Perfect for homes <br/>with a single small/medium pet</p>",
+            "image": "shopify://shop_images/wmachin.jpg",
+            "title_2": "<h3>For Multiple or Large <br/>Pet Households</h3>",
+            "text_2": "<p>Perfect for homes <br/>with multiple pets or large pets</p>"
+          }
+        },
+        "text_4WXV9F": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Strong Formula</h3>",
+            "text_1": "<p>Deep cleans residue, <br/>odors, and buildup</p>",
+            "image": "shopify://shop_images/musclee.jpg",
+            "title_2": "<h3>40% More Powerful</h3>",
+            "text_2": "<p>Tackles tough buildup <br/>with enhanced strength</p>"
+          }
+        },
+        "text_iU3gMF": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Compact Power - 11g</h3>",
+            "text_1": "<p>Strong & Efficient Clean</p>",
+            "image": "shopify://shop_images/power.jpg",
+            "title_2": "<h3>Maximum Strength - 15g</h3>",
+            "text_2": "<p>Deep Thorough Clean</p>"
+          }
+        },
+        "text_BkdxYE": {
+          "type": "text",
+          "settings": {
+            "title_1": "<h3>Effective Odor Removal</h3>",
+            "text_1": "<p>Ideal for routine washer care</p>",
+            "image": "shopify://shop_images/atoom.jpg",
+            "title_2": "<h3>Cyclodextrin-Powered</h3>",
+            "text_2": "<p>Advanced odor and residue removal</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CXDYp3",
+        "text_4WXV9F",
+        "text_iU3gMF",
+        "text_BkdxYE"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "background_style": "primary",
+        "product_1": "uproot-washing-machine-cleaner-pro",
+        "image_1": "shopify://shop_images/New_pro.jpg",
+        "title_1": "<p>Washing Machine<br/><strong>Cleaner Pro</strong></p>",
+        "product_2": "uproot-washing-machine-cleaner-ultra",
+        "image_2": "shopify://shop_images/ultra.jpg",
+        "title_2": "<p>Washing Machine<br/><strong>Cleaner </strong><em><strong>Pro</strong></em></p>",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -98,6 +161,7 @@
   },
   "order": [
     "main",
+    "compare_table_image_P6w3gx",
     "related-products"
   ]
 }
