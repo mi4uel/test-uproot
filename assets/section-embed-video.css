@@ -1,0 +1,17 @@
+
+  .video-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .embed-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 749px) {
+    .video-container {
+      max-width: 100%;
+    }
+  }
